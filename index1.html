@@ -150,7 +150,7 @@
 <body>
 
     <div id="fixed-area">
-        <img id="main-img" src="./assets/images/1.gif" alt="Hình ảnh" />
+        <img id="main-img" src="./assets/images/3.gif" alt="Hình ảnh" />
         <div id="text">Có quà nè thanh!</div> <!-- Sửa lời nhắn chính ở đây -->
     </div>
 
@@ -313,7 +313,7 @@
 
 
 
-<!DOCTYPE html>
+
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -450,11 +450,11 @@
 
         // Hàm tạo hiệu ứng gõ chữ
         function typeWriter() {
-            const text = `Hy vọng ngày hôm nay cũng đặc biệt như chính con người bạn.
-                          Sinh nhật ấm áp và an lành nhé! 
-                          Sinh nhật vui vẻ. 
-                          Chúc bạn luôn may mắn và thành công trong mọi lĩnh vực của cuộc sống. 
-                          Chúc mọi điều ước, hoài bão của bạn đều trở thành hiện thực, lúc nào cũng vui vẻ, tràn ngập tiếng cười, yêu đời và ngời ngời sức sống.`;
+            const text = ` Hết ngày hôm nay có thêm 1 tuổi mới rồi phải cố gắn hơn nữa nhé Chúc bấp đạt những điều may mắng và tốt lành nhất.
+phải trưởng thành hơn,mạnh mẽ hơn,ít xầu đi,ít balabala nhen,sống chill hơn.
+Đừng đến năm tháng,hãy đến trải nghiệm và kỷ niệm đáng nhớ.Cuộc đời là cuộc hành trình,chúc hình trình bấp đầy màu sắc & tràng ngập niềm zuiii.
+Hãy kiên nhẫn,dứt khoát,lùi 1 bướt để tiến 2 bước 
+Không biết là có thể làm được mấy lần nữa mà thôi côi trọng hiện tại trước đi hehe`;
             let i = 0;
             const messageElement = document.getElementById('message');
             messageElement.classList.add('typing'); // Thêm class để tạo hiệu ứng
@@ -472,9 +472,72 @@
 
         // Tự động hiển thị thông báo khi trang được tải xong
         window.onload = function() {
-            setTimeout(showNotification, 5000); // Hiển thị thông báo sau 500ms
+            setTimeout(showNotification, 10000); // Hiển thị thông báo sau 500ms
         };
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .button {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: rgb(0, 0, 0);
+      background-color: #d177cd;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: none; /* Ẩn nút ban đầu */
+    }
+
+    .button:hover {
+      background-color: #cedb16;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="https://lixithanhne.wordpress.com/" class="button" id="delayedButton">đọc hết r bấm vô đây nè</a>
+
+  <script>
+    // Sau 40 giây thì hiện nút
+    setTimeout(function() {
+      document.getElementById("delayedButton").style.display = "inline-block";
+    }, 60000); // 40.000ms = 40s
+  </script>
+
+</body>
+</html>
+
